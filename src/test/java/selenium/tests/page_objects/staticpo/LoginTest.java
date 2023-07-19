@@ -13,10 +13,10 @@ public class LoginTest extends TestBase {
 
     @Test
     public static void loginWithValidCredentials() throws InterruptedException {
-        String expectedMessage = "Wrong password or the account is disabled, or does not ex!!!ist";
+        String expectedMessage = "Wrong password or the account is disabled, or does not exist";
 
         LoginPage.attemptLogin(disabledEmail, correctPassword);
-        Assert.assertEquals(LoginPage.getErrorMessageText(), expectedMessage);
+        Assert.assertEquals(LoginPage.getErrorMessageText().trim(), expectedMessage);
     }
 
     @Test

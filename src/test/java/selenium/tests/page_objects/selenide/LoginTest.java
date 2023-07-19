@@ -59,7 +59,7 @@ public class LoginTest {
 
         LoginPage loginPage = new LoginPage();
         loginPage.attemptLogin(disabledEmail, correctPassword);
-        Assert.assertEquals(loginPage.getErrorMessageText(), expectedMessage);
+        Assert.assertEquals(loginPage.getErrorMessageText().trim(), expectedMessage);
 
     }
 

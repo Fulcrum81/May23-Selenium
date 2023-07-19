@@ -37,8 +37,6 @@ public class WebDriverContainer {
             case "linux" -> caps.setPlatform(Platform.LINUX);
         }
 
-        caps.setPlatform(Platform.WINDOWS);
-
         driver = new RemoteWebDriver(new URL("http://192.168.249.1:4444/wd/hub"), caps);
 
 //        switch (browser) {

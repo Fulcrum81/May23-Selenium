@@ -55,7 +55,7 @@ public class LoginTest {
 
     @Test
     public static void loginWithValidCredentials() {
-        String expectedMessage = "Wrong password or the account is disabled, or does not ex!!ist";
+        String expectedMessage = "Wrong password or the account is disabled, or does not exist";
 
         LoginPage loginPage = new LoginPage();
         loginPage.attemptLogin(disabledEmail, correctPassword);
